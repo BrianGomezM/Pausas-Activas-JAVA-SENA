@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Break</string>
+
+    <!--/////ACTIVIDAD DE INGRESAR/////////-->
+    <string name="correoIngresar">Correo Electronico</string>
+    <string name="claveIngresar">Contraseña</string>
+
+    <!--//////ACTIVIDAD DE REGISTRAR USUARIO//////////////-->
+    <string name="nombresRegistra">Nombre y Apellido</string>
+    <string name="correoRegistra">Correo Electronico</string>
+    <string name="numerodocumento">Numero De Documento</string>
+    <string name="claveRegistra">Contraseña</string>
+    <string name="repetirlaveRegistra">Repetir-Contraseña</string>
+
+    <!--///////ACTIVIDAD DE RECUPERAR CONTRASEÑA//////////////-->
+    <string name="correoRecuperar">Correo Electronico</string>
+    <string name="numerodocumentorecuperar">Numero De Documento</string>
+
+    <!--////////////Vista Gamil///////////////////////-->
+    <string name="nombre">Signed in as: %s</string>
+
+    <!--///////////Registrar personaje////////////////-->
+    <string name="nombreAvatar">Nombre-Avatar</string>
+</resources>

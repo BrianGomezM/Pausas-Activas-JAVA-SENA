@@ -1,0 +1,89 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:fbutton="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.admin.pausas_activas.Fragmentos.Play">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/hora"
+        android:textSize="20dp"
+        android:textStyle="bold|normal"
+        android:textColor="@color/colorHora"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:text="Cargando..." />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hora"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp">
+
+        <info.hoang8f.widget.FButton
+            android:id="@+id/botonXML"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="20dp"
+            android:drawableLeft="@drawable/reloj"
+            android:drawablePadding="0dp"
+            android:minHeight="80dp"
+            android:minWidth="250dp"
+            android:paddingLeft="30dp"
+            fbutton:buttonColor="@color/colorPrimary"
+            android:paddingRight="20dp"
+            android:paddingTop="-5dp"
+            android:text="10:00 AM"
+            android:textColor="@android:color/white"
+            fbutton:cornerRadius="15dp"
+            fbutton:shadowEnabled="true"
+            fbutton:shadowHeight="6dp" />
+
+        <info.hoang8f.widget.FButton
+            android:id="@+id/boton2XML"
+            fbutton:buttonColor="@color/colorPrimary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="20dp"
+            android:drawableLeft="@drawable/reloj"
+            android:drawablePadding="0dp"
+            android:minHeight="80dp"
+            android:minWidth="250dp"
+            android:layout_below="@+id/botonXML"
+            android:paddingLeft="30dp"
+            android:paddingRight="20dp"
+            android:paddingTop="-5dp"
+            android:text="04:00 PM"
+            android:textColor="@android:color/white"
+            fbutton:cornerRadius="15dp"
+            fbutton:shadowEnabled="true"
+            fbutton:shadowHeight="6dp" />
+
+    </RelativeLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/hora2"
+        android:textSize="30dp"
+        android:textStyle="bold|normal"
+        android:textColor="@color/colorPrimary"
+        android:layout_height="wrap_content"
+        android:text="La hora es"
+        android:visibility="invisible"
+        android:layout_above="@+id/empieza"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/empieza"
+        android:textSize="16dp"
+        android:textStyle="bold|normal"
+        android:textColor="@color/colorHora"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>

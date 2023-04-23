@@ -1,0 +1,134 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#878787"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.admin.pausas_activas.Fragmentos.Discapacidad">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textColor="#fff"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/tituloDiscapacidad"
+        android:textAlignment="center"
+        android:text="DISCAPACIDADES PERMANENTES"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="520dp"
+        android:background="@drawable/cuerpo_hombre"
+        android:id="@+id/cuerpo"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/tituloDiscapacidad"
+        android:layout_alignEnd="@+id/tituloDiscapacidad" />
+
+    <com.dd.CircularProgressButton
+        android:id="@+id/guardarDiscapacidad"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:cpb_cornerRadius="70dp"
+        app:cpb_iconError="@drawable/reintentar"
+        app:cpb_iconComplete="@drawable/bien"
+        android:paddingBottom="5dp"
+        android:drawableBottom="@drawable/bien"
+        app:cpb_selectorIdle="@drawable/boton_efecto"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/piernas"
+        android:onClick="onCheckboxClicked"
+        android:layout_marginBottom="90dp"
+        android:layout_above="@+id/guardarDiscapacidad"
+        android:layout_alignLeft="@+id/cintura"
+        android:layout_alignStart="@+id/cintura" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cuello"
+        android:onClick="onCheckboxClicked"
+        android:layout_marginTop="74dp"
+        android:layout_alignTop="@+id/cuerpo"
+        android:layout_centerHorizontal="true" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cintura"
+        android:onClick="onCheckboxClicked"
+        android:layout_below="@+id/codoizqui"
+        android:layout_alignLeft="@+id/cuello"
+        android:layout_alignStart="@+id/cuello" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/hombroDere"
+        android:onClick="onCheckboxClicked"
+        android:layout_marginRight="20dp"
+        android:layout_below="@+id/cuello"
+        android:layout_alignRight="@+id/cuerpo"
+        android:layout_alignEnd="@+id/cuerpo"
+        android:checked="false" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/hombroizqui"
+        android:onClick="onCheckboxClicked"
+        android:layout_marginLeft="13dp"
+        android:layout_marginStart="13dp"
+        android:layout_alignBaseline="@+id/hombroDere"
+        android:layout_alignBottom="@+id/hombroDere"
+        android:layout_alignLeft="@+id/codoizqui"
+        android:layout_alignStart="@+id/codoizqui" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/munecaDere"
+        android:onClick="onCheckboxClicked"
+        android:layout_marginBottom="55dp"
+        android:layout_above="@+id/piernas"
+        android:layout_alignRight="@+id/cuerpo"
+        android:layout_alignEnd="@+id/cuerpo" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/codoDere"
+        android:onClick="onCheckboxClicked"
+        android:layout_marginBottom="58dp"
+        android:layout_above="@+id/munecaDere"
+        android:layout_alignRight="@+id/cuerpo"
+        android:layout_alignEnd="@+id/cuerpo" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/codoizqui"
+        android:onClick="onCheckboxClicked"
+        android:layout_alignTop="@+id/codoDere"
+        android:layout_alignLeft="@+id/tituloDiscapacidad"
+        android:layout_alignStart="@+id/tituloDiscapacidad" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/munecaizqui"
+        android:onClick="onCheckboxClicked"
+
+        android:layout_alignTop="@+id/munecaDere"
+        android:layout_alignLeft="@+id/cuerpo"
+        android:layout_alignStart="@+id/cuerpo" />
+
+</RelativeLayout>
+

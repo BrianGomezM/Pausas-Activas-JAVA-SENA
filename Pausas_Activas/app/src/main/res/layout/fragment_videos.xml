@@ -1,0 +1,35 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.admin.pausas_activas.Fragmentos.Videos">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/rela"
+        android:layout_height="match_parent">
+
+        <VideoView android:id="@+id/videoView"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+        </VideoView>
+
+        <com.dd.CircularProgressButton
+            android:id="@+id/siguiente"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:cpb_cornerRadius="80dp"
+            android:drawableBottom="@drawable/siguiente"
+            android:paddingBottom="10dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Color del splas -->
+    <color name="colorPrimary">#125688</color>
+    <!--- ............................... -->
+
+    <!--Color Boton Flotante Inicio-->
+    <color name="white">#fafafa</color>
+    <color name="amarillo">#FACC2E</color>
+    <color name="amarilloTranp">#F7D358</color>
+    <color name="morado">#e91e63</color>
+    <color name="moradoTranp">#ec407a</color>
+    <!-- ........................... -->
+
+    <!--Colores de la apk-->
+    <color name="colorPrimaryAPK">#125688</color>
+    <color name="colorPrimaryDarkAPK">#125688</color>
+    <color name="colorAccentAPK">#c8e8ff</color>
+    <!--................-->
+
+    <!--Color Play juego-->
+    <color name="colorHora">#004c4d</color>
+    <!--......-->
+</resources>

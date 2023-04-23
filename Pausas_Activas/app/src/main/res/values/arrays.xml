@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Array Para las TABS-->
+    <string-array name="titles">
+        <item>INGRESAR</item>
+        <item>REGISTRAR</item>
+        <item>RECUPERAR</item>
+    </string-array>
+</resources>
